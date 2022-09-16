@@ -1,6 +1,6 @@
 from ascii import yoda, vadar, starwars
 starwars()
-player=input("\nhello there whats you name: ")
+player=input("\nHello there! please enter you name: ")
 class Question:
     
     def __init__(self, quiz_text, quiz_answers):
@@ -10,15 +10,10 @@ class Question:
 class Player():
     def __init__(self):
        
-       self.name = player
-       print(f"\nwelcome {player} complete this quiz to find out if you are a jedi or sith")
-
-   
-
-             
-class Quiz:
-    
-   
+        self.name = player
+        print(f"\nwelcome {player} complete this quiz to find out if you are a jedi or sith")
+       
+class Quiz:  
         
     def __init__(self, question_list):
         self.question_number = 0
@@ -34,7 +29,8 @@ class Quiz:
         
         
         while True:
-            user_answer = input(f"\nQ.{self.question_number}: {current_question.text} enter A or B ").upper()
+            user_answer = input(f"\nQ.{self.question_number}/10: {current_question.text}   \nEnter A or B: ")
+            user_answer =user_answer.upper()
             if user_answer != "A" and user_answer != "B":
                     print("you on drugs")
                     continue

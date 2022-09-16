@@ -12,37 +12,37 @@ question_data = [
         
     },
     {
-        "question": "\nHow do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality",
+        "question": "How do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality\n",
         "correct_answer": "A"
        
     },
     {
-       "question": "\nHow do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality",
+       "question": "How do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality\n",
         "correct_answer": "A"
     },
     {
-        "question": "\nHow do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality",
+        "question": "How do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality\n",
         "correct_answer": "A"
         
     },
     {
-       "question": "\nHow do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality",
+       "question": "How do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality\n",
         "correct_answer": "A"
     },
     {
-       "question": "\nHow do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality",
+       "question": "How do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality\n",
         "correct_answer": "A"
     },
     {
-       "question": "\nHow do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality",
+       "question": "How do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality\n",
        "correct_answer": "A"
     },
     {
-        "question": "\nHow do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality",
+        "question": "How do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality\n",
         "correct_answer": "A"
     },
     {
-        "question": "\nHow do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality",
+        "question": "How do you get someone you find attractive to like you?:\n\nA. Seduce them by telling them what they want to hear\nB. talk to them and find out more about their intrest and peronality\n",
         "correct_answer": "A"
     }
 ]

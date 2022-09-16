@@ -1,4 +1,4 @@
-from typing import Final
+
 from rich.console import Console
 
 from data import question_data
@@ -8,7 +8,6 @@ console =Console()
 
 Player()
 question_list = []
-console.rule("")
 for question in question_data:
     question_text = question["question"]
     question_answer = question["correct_answer"]
