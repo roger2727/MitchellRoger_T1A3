@@ -59,6 +59,42 @@ class Quiz:
                 print("\nYou've completed the quiz")
                 print(f"\nThe darks side it strong with you {player}, you are a sith  ")
                 vadar()
-            
+class Quest:
+    def __init__(self, quiz_text, quest_answers,wrong_answers):
+        self.text = quiz_text
+        self.answer = quest_answers
+        self. wrong = wrong_answers                
+class Story():
+    
+    def __init__(self, quest_list,):
+        self.quest_number = 0
+        self.quest_list = quest_list
+        
+       
+    def check_questions(self):
+        return self.quest_number < len(self.quest_list)    
+        
+    def next_question(self):
+        current_question = self.quest_list[self.quest_number]
+        self.quest_number += 1
+        
+        while True:
+            user_answer = input(f"\nQuest.{self.quest_number}: {current_question.text} enter A or B ")
+            user_answer= user_answer.upper()
+            if user_answer != "A" and user_answer != "B":
+                print("you on drugs")
+                continue
+            else:
+                break           
+        self.check_answer(user_answer, current_question.answer,current_question.wrong)
+        
+    def check_answer(self, user_answer, correct_answer,wrong_answers):
+        
+            if user_answer == correct_answer:
+                
+                print("correct")
+            else:
+                print(wrong_answers)
+                self.quest_number =0            
             
                     
