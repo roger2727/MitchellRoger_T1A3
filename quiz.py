@@ -1,25 +1,30 @@
+from ascii import yoda, vadar, starwars
+starwars()
+player=input("\nhello there whats you name: ")
 class Question:
     
     def __init__(self, quiz_text, quiz_answers):
         self.text = quiz_text
         self.answer = quiz_answers
 
+class Player():
+    def __init__(self):
+       
+       self.name = player
+       print(f"\nwelcome {player} complete this quiz to find out if you are a jedi or sith")
 
-class Player:
    
-    def __init__(self):  
-        
-        self.name = input("well hello there whats your name ")
-        print("hello", self.name,)
+
              
 class Quiz:
     
+   
+        
     def __init__(self, question_list):
         self.question_number = 0
         self.counter = 0
         self.question_list = question_list
-        
-
+    
     def check_questions(self):
         return self.question_number < len(self.question_list)
 
@@ -45,13 +50,19 @@ class Quiz:
         if user_answer == correct_answer:
             self.counter += 1
             print(f"{self.counter}")
-    
+            
+   
     def final(self):
+        
         if self.question_number == 10:
             if self.counter>6:
-                print("yoda")
+                print("\nYou've completed the quiz")
+                print(f"\n Goodness i sense in you {player}, Jedi story you begin")
+                yoda()
             else:
-                print("vadar")
+                print("\nYou've completed the quiz")
+                print(f"\nThe darks side it strong with you {player}, you are a sith  ")
+                vadar()
             
             
                     
