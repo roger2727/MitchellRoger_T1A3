@@ -1,5 +1,10 @@
 from ascii import yoda, vadar, starwars
+from rich.console import Console
+console =Console()
 starwars()
+
+
+
 player=input("\nHello there! please enter you name: ")
 class Question:
     
