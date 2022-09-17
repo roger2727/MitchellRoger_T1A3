@@ -1,6 +1,6 @@
-from pdb import Restart
-from tkinter.messagebox import QUESTION
-from ascii import yoda, vadar, starwars
+
+
+from ascii import yoda, vadar
 from rich.console import Console
 from rich import print
 from rich.padding import Padding
@@ -99,15 +99,24 @@ class Quiz(Questionaire):
             if self.counter>6:
                 
                 print(Padding(f"***You have completed the quiz  you are a [i]JEDI[i]***", (2, 50), style="bold on green", expand=True,))
-                
                 yoda()
+                doit =input("play again a yes b no")
+                if doit == "a":
+                    self.counter = 0
+                    self.question_number = 0
+                    return self.question_number
+                    
                 
             else:
                 print(Padding(f"***You have completed the quiz  The darks side it strong with you, you are a SITH***", (2, 30), style="bold on red", expand=True,))
-                
                 vadar()
+                doit =input("play again a yes b no")
+                if doit == "a":
+                    self.counter = 0
+                    self.question_number = 0
+                    return self.question_number
                 
-            print(Padding(f"***You have completed the quiz  you are a [i]JEDI[i]***", (2, 50), style="bold on green", expand=True,)) 
+            
                 
 class Story(Questionaire):
       
@@ -130,7 +139,7 @@ class Story(Questionaire):
                 
     def final(self):
         
-       pass
+       print("this is a test this is a test this is a test this is a test v this is a test")
             
             
         
