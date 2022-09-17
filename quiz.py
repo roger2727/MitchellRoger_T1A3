@@ -1,29 +1,38 @@
+from pdb import Restart
+from tkinter.messagebox import QUESTION
 from ascii import yoda, vadar, starwars
 from rich.console import Console
-starwars()
-namea=input("Hello there! what is you name ")
-print(f"welcome {namea}/ncomplete this quiz to find out if you are a jedi or sith") 
+from rich import print
+from rich.padding import Padding
 
 console =Console()
+style = "bold white on green"
+
+
+
+# console.print(f"welcome {test} complete this quiz to find out if you are a jedi or sith",style=style,justify="center") 
+
+
 
 
 class Question:
-    
+
     def __init__(self, quiz_text, quiz_answers, wrong_answers):
-        
+          
         self.text = quiz_text
         self.answer = quiz_answers
         self.wrong = wrong_answers  
-        
+     
 
 class Questionaire:
+     
     
     
-         
-           
     def __init__(self, question_data):
+           
         
         
+      
         self.question_number = 0
         self.counter = 0
         self.question_list = []
@@ -88,29 +97,42 @@ class Quiz(Questionaire):
         
         if self.question_number == 10:
             if self.counter>6:
-                print("\nYou've completed the quiz")
-                print(f"\n Goodness i sense in you  , Jedi story you begin")
+                
+                print(Padding(f"***You have completed the quiz  you are a [i]JEDI[i]***", (2, 50), style="bold on green", expand=True,))
+                
                 yoda()
-                print(f"{namea}")
+                
             else:
-                print(f"\nYou've completed the quiz")
-                print(f"\nThe darks side it strong with you , you are a sith  ")
+                print(Padding(f"***You have completed the quiz  The darks side it strong with you, you are a SITH***", (2, 30), style="bold on red", expand=True,))
+                
                 vadar()
-                print(f"{namea}")
+                
+            print(Padding(f"***You have completed the quiz  you are a [i]JEDI[i]***", (2, 50), style="bold on green", expand=True,)) 
                 
 class Story(Questionaire):
-        
+      
     def check_answer(self, user_answer, correct_answer, wrong_answers):
         
             if user_answer == correct_answer:
                 
                 print("correct")
             else:
+                print(Padding(f"☠︎☠︎{wrong_answers}☠︎☠︎", (2, 40), style="bold on red", expand=True,))    
                 print(wrong_answers)
-                self.question_number =0  
+                die=input("play again")
+                self.question_number =0
+                if die=="y":
+                 return self.question_number
+                else:
+                    exit()
+                 
+                      
                 
     def final(self):
-        pass
+        
+       pass
+            
+            
         
       
                   
