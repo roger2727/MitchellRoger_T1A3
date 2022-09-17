@@ -1,18 +1,29 @@
-from ascii import shit, yoda, vadar, starwars
+from ascii import yoda, vadar, starwars
 from rich.console import Console
+starwars()
+namea=input("Hello there! what is you name ")
+print(f"welcome {namea}/ncomplete this quiz to find out if you are a jedi or sith") 
+
 console =Console()
-shit()
+
 
 class Question:
     
     def __init__(self, quiz_text, quiz_answers, wrong_answers):
+        
         self.text = quiz_text
         self.answer = quiz_answers
         self.wrong = wrong_answers  
-
-class Questionaire:  
         
+
+class Questionaire:
+    
+    
+         
+           
     def __init__(self, question_data):
+        
+        
         self.question_number = 0
         self.counter = 0
         self.question_list = []
@@ -34,10 +45,11 @@ class Questionaire:
         
         
         while True:
-            user_answer = input(f"\nQ.{self.question_number}/10: {current_question.text}   \n[yellow]Enter A or B:[/]\n")
+            user_answer = console.input(f"\n[blue]Q:{self.question_number}/10[/]\n{current_question.text}   \n[blue]Enter [[/]A[blue]] or [[/]B[blue]][/]:\n")
+            console.rule("")
             user_answer =user_answer.upper()
             if user_answer != "A" and user_answer != "B":
-                    print("****INVALID INPUT**** i think you are on drugs! type A or B")
+                    console.print(f"[red][{user_answer}] ****INVALID INPUT****[/] [blue]Enter [[/]A[blue]] or [[/]B[blue]][/]")
                     continue
             else:
                 break
@@ -73,15 +85,18 @@ class Quiz(Questionaire):
    
     def final(self):
         
+        
         if self.question_number == 10:
             if self.counter>6:
                 print("\nYou've completed the quiz")
-                print(f"\n Goodness i sense in you , Jedi story you begin")
-                
+                print(f"\n Goodness i sense in you  , Jedi story you begin")
+                yoda()
+                print(f"{namea}")
             else:
-                print("\nYou've completed the quiz")
+                print(f"\nYou've completed the quiz")
                 print(f"\nThe darks side it strong with you , you are a sith  ")
-                
+                vadar()
+                print(f"{namea}")
                 
 class Story(Questionaire):
         
@@ -95,15 +110,9 @@ class Story(Questionaire):
                 self.question_number =0  
                 
     def final(self):
+        pass
         
-        if self.question_number == 10:
-            if self.counter>6:
-                print("\nYou've completed the quiz")
-                print("\n Goodness i sense in you , Jedi story you begin")
-                
-            else:
-                print("\nYou've completed the quiz")
-                print("\nThe darks side it strong with you , you are a sith  ")
+      
                   
                 
          
