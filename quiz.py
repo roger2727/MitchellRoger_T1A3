@@ -1,21 +1,9 @@
 
-
-from difflib import restore
-from pdb import Restart
 from ascii import yoda, vadar
 from rich.console import Console
 from rich import print
 from rich.padding import Padding
-
 console =Console()
-style = "bold white on green"
-
-
-
-# console.print(f"welcome {test} complete this quiz to find out if you are a jedi or sith",style=style,justify="center") 
-
-
-
 
 class Question:
 
@@ -82,10 +70,7 @@ class Questionaire:
         self.next_question()
         
         self.final()
-           
-
-         
-
+        
 class Quiz(Questionaire):     
         
 
@@ -105,8 +90,17 @@ class Quiz(Questionaire):
                 
                 print(Padding(f"***You have completed the quiz  you are a [i]JEDI[i]***", (2, 50), style="bold on green", expand=True,))
                 yoda()
-                doit =input("play again a yes b no")
-                if doit == "a":
+                
+                while True:
+                    
+                    replay_quiz =console.input("[yellow]Do you want to continue or rerty the quiz \nA.[/] continue\n[yellow]B.[/] Retry\n")
+                    replay_quiz =replay_quiz.upper()
+                    if replay_quiz != "A" and replay_quiz != "B":
+                        console.print(f"[red][{replay_quiz}] ****INVALID INPUT****[/] [blue]Enter [[/]A[blue]] or [[/]B[blue]][/]")
+                        continue
+                    else:
+                      break
+                if replay_quiz == "a":
                     self.counter = 0
                     self.question_number = 0
                     return self.question_number
@@ -117,7 +111,7 @@ class Quiz(Questionaire):
                 vadar()
                 while True:
                     
-                    start_again =input("Are you ready to continue on your quest?\nA. Yes continue\nB. No, I want to redo the quiz ")
+                    start_again =console.input("[yellow]Do you want to continue or rerty the quiz \nA.[/] continue\n[yellow]B.[/] Retry\n")
                     start_again =start_again.upper()
                     if start_again != "A" and start_again != "B":
                         console.print(f"[red][{start_again}] ****INVALID INPUT****[/] [blue]Enter [[/]A[blue]] or [[/]B[blue]][/]")
@@ -137,23 +131,33 @@ class Story(Questionaire):
         
             if user_answer == correct_answer:
                 
-                print("correct")
+                print(Padding("correct", (1,1), style="white on green", expand=False))
             else:
-                print(Padding(f"☠︎☠︎{wrong_answers}☠︎☠︎", (2, 40), style="bold on red", expand=True,))    
-                print(wrong_answers)
+                print(Padding(f"[black]☠︎ ☠︎ ☠︎ ☠︎[/]{wrong_answers}[black]☠︎ ☠︎ ☠︎ ☠︎[/]", (2, 40), style="bold black on red", expand=True,))    
+               
                 
                 while True:
                     
-                    player_dies =input("Start Quest again?:\nA. Yes\nB. No i quit")
+                    player_dies =input("\n[yellow]Start Quest again?:[/]\n\nA. Yes\nB. No i quit")
                     player_dies =player_dies.upper()
                     if player_dies != "A" and player_dies != "B":
                         console.print(f"[red][{player_dies}] ****INVALID INPUT****[/] [blue]Enter [[/]A[blue]] or [[/]B[blue]][/]")
                         continue
-                    else:
-                      break
-                self.question_number =0
-                if player_dies=="A":
-                 return self.question_number
+                     
+                    self.question_number =0
+                    if player_dies=="A":
+                        return self.question_number
+                    if player_dies=="B":
+                        self.question_number =5
+                        return self.question_number
+
+                        
+            
+            
+            
+                 
+                
+              
                 
                     
                  
@@ -161,7 +165,7 @@ class Story(Questionaire):
                 
     def final(self):
         
-       print("this is a test this is a test this is a test this is a test v this is a test")
+       pass
             
             
         

@@ -1,5 +1,6 @@
 from rich.console import Console
 console=Console()
+
 def starwars():
     console.rule("")
     console.rule("")
@@ -64,4 +65,23 @@ II_____/   \|||||/   \_____II
 
 [/]""", style ="red")    
     
-    
+def finishdo():
+     
+  console.print(r"""[yellow]            ________   ___   ____
+           / __   __| / _ \ |  _ \
+     ______> \ | |   |  _  ||    /_____________________________
+    / _______/ |_|   |_| |_||_|\______________________________ \
+   / /                                                        \ \
+  | |                                                          | |
+  | |                                                          | |
+  | |    [green]Congratulations you have completed your training[/]      | |
+  | |                                                          | |
+  | |       [green]You are now a qualified Jedi master.[/]               | |
+  | |                                                          | |
+  | |                                                          | |
+  | |            [blue]may the force be with you[/]                     | |
+  | |                                                          | |
+   \ \____________________________    _   ___   ____   _______/ /
+    \___________________________  |  | | / _ \ |  _ \ / _______/
+                                | |/\| ||  _  ||    / > \        LS
+                                 \_/\_/ |_| |_||_|\_\|__/)  [/] """)
