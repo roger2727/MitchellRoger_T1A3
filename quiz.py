@@ -1,5 +1,7 @@
 
 
+from difflib import restore
+from pdb import Restart
 from ascii import yoda, vadar
 from rich.console import Console
 from rich import print
@@ -115,14 +117,14 @@ class Quiz(Questionaire):
                 vadar()
                 while True:
                     
-                    doit =input("Are you ready to continue on your quest?\nA.Yes continue\nB. No, I want to redo the quiz ")
-                    doit =doit.upper()
-                    if doit != "A" and doit != "B":
-                        console.print(f"[red][{doit}] ****INVALID INPUT****[/] [blue]Enter [[/]A[blue]] or [[/]B[blue]][/]")
+                    start_again =input("Are you ready to continue on your quest?\nA. Yes continue\nB. No, I want to redo the quiz ")
+                    start_again =start_again.upper()
+                    if start_again != "A" and start_again != "B":
+                        console.print(f"[red][{start_again}] ****INVALID INPUT****[/] [blue]Enter [[/]A[blue]] or [[/]B[blue]][/]")
                         continue
                     else:
                       break
-                if doit == "B":
+                if start_again == "B":
                  self.counter = 0
                  self.question_number = 0
                  return self.question_number
@@ -139,12 +141,21 @@ class Story(Questionaire):
             else:
                 print(Padding(f"☠︎☠︎{wrong_answers}☠︎☠︎", (2, 40), style="bold on red", expand=True,))    
                 print(wrong_answers)
-                die=input("play again")
+                
+                while True:
+                    
+                    player_dies =input("Start Quest again?:\nA. Yes\nB. No i quit")
+                    player_dies =player_dies.upper()
+                    if player_dies != "A" and player_dies != "B":
+                        console.print(f"[red][{player_dies}] ****INVALID INPUT****[/] [blue]Enter [[/]A[blue]] or [[/]B[blue]][/]")
+                        continue
+                    else:
+                      break
                 self.question_number =0
-                if die=="y":
+                if player_dies=="A":
                  return self.question_number
-                else:
-                    exit()
+                
+                    
                  
                       
                 
