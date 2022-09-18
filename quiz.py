@@ -79,17 +79,20 @@ class Questionaire:
                      
         self.next_question()
         
-        self.final()   
-        
+        self.final()
+           
+
+         
 
 class Quiz(Questionaire):     
         
 
     def check_answer(self, user_answer, correct_answer,wrong_answers):
         
+        
         if user_answer == correct_answer:
             self.counter += 1
-            print(f"{self.counter}")
+        #     print(f"{self.counter}")
             
    
     def final(self):
@@ -110,12 +113,20 @@ class Quiz(Questionaire):
             else:
                 print(Padding(f"***You have completed the quiz  The darks side it strong with you, you are a SITH***", (2, 30), style="bold on red", expand=True,))
                 vadar()
-                doit =input("play again a yes b no")
-                if doit == "a":
-                    self.counter = 0
-                    self.question_number = 0
-                    return self.question_number
-                
+                while True:
+                    
+                    doit =input("Are you ready to continue on your quest?\nA.Yes continue\nB. No, I want to redo the quiz ")
+                    doit =doit.upper()
+                    if doit != "A" and doit != "B":
+                        console.print(f"[red][{doit}] ****INVALID INPUT****[/] [blue]Enter [[/]A[blue]] or [[/]B[blue]][/]")
+                        continue
+                    else:
+                      break
+                if doit == "B":
+                 self.counter = 0
+                 self.question_number = 0
+                 return self.question_number
+                    
             
                 
 class Story(Questionaire):

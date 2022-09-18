@@ -17,7 +17,7 @@ while True:
     
            
             
-    print(Padding(f"***You have completed the quiz  you are a [i]JEDI[i]***", (2, 50), style="bold black on purple", expand=True,))                  
+    print(Padding(f"***You{name} have completed the quiz  you are a [i]JEDI[i]***", (2, 50), style="bold black on purple", expand=True,))                  
     new_question_list = []
     quest = Story(quest_data)
     quest.run()
