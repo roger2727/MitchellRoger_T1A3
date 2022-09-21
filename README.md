@@ -9,7 +9,7 @@ link to video presentation [_here_](https://vimeo.com/manage/videos/742514843).
 - [Styling Convention](#styling-convention)
 - [Game Features](#game-features)
 - [Implementation Plan](#implementation-plan)
-- [How To Install](#how-to-install)
+- [How To Install And Run](#how-to-install-and-run)
 - [Screenshots](#screenshots)
 - [Reference](#reference)
 
@@ -73,17 +73,36 @@ link to Trello Implementation plan [_here_](https://trello.com/b/p572wN56/star-w
 <br>
 <br>
 
-## **How To Install**
+## **How To Install and run**
 
-- About page that had info about work history and a link to download resume
-- Navigation bar with links to pages and a logo.
-- Blog page that uses hyperlinks to direct you to the blog you want to read.
-- Social media icons that link to my profiles.
-- skills section that shows my project and a link to the repo
-- Contact section with links to send an email, call my number and my location.
-- Footer has social media links to my personal accounts
-  <br>
-  <br>
+1. Install Python3
+
+   - check if Python3 is installed, type in the terminal python3 --version' into terminal
+
+   - Installation instructions: https://realpython.com/installing-python/
+
+2. Create a Virtual Environment
+
+   - type in the terminal python3 -m venv venv
+   - type in the terminal . venv/bin/activate
+   - Installation instructions: https://docs.python.org/3/library/venv.html
+
+3. Install pip (To check if pip is installed, type 'pip --version' into terminal
+
+   - if pip not intalled type python -m ensurepip --upgrade
+   - Installation instructions: https://pip.pypa.io/en/stable/installation/
+
+4. Install rich module pakage
+
+   - type python -m pip install rich into the terminal
+   - Installation instructions: https://pypi.org/project/rich/
+
+5. run app
+
+   - type in the terminal python3 main.py
+
+<br>
+<br>
 
 ## **Screenshots**
 
