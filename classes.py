@@ -46,6 +46,8 @@ class Questionaire:
             wrong_answers = question["incorrect_answers"]
             new_question = Question(
                 question_text, question_answer, wrong_answers)
+            
+            
 
             self.question_list.append(new_question)
             # empty list to store questions
@@ -56,6 +58,7 @@ class Questionaire:
         Returns:
             str: returns if question number is less then the list of questions
         """
+        self.new =len(self.question_list)
         return self.question_number < len(self.question_list)
 
     def next_question(self):
@@ -69,7 +72,7 @@ class Questionaire:
         while True:
            
             console.print(Padding(
-                f"Q:{self.question_number}/10: {current_question.text}",
+                f"Q:{self.question_number}/{self.new}: {current_question.text}",
                 (1, 1), style="bold on blue", expand=True,))
             user_answer=input("\n Enter A or B: ")
             
@@ -203,6 +206,7 @@ class Story(Questionaire):
                      1),
                     style="white on green",
                     expand=False))
+            
         else:
             self.counter =0
             
@@ -213,25 +217,32 @@ class Story(Questionaire):
                      40),
                     style="bold black on red",
                     expand=True,
+                    
                 ))
-
+            self.validation()
+    def restart(self):
+        
+        
             while True:
 
-                player_dies = console.input(
+                self.player_dies = console.input(
                     "\n[yellow]Restart Quest?:[/]\n\nA. Yes\nB. No")
-                player_dies = player_dies.upper()
-                if player_dies != "A" and player_dies != "B":
+                self.player_dies = self.player_dies.upper()
+                if self.player_dies != "A" and self.player_dies != "B":
                     console.print(
-                        f"[red][{player_dies}]*INVALID INPUT*[/]Enter A or B")
+                        f"[red][{self.player_dies}]*INVALID INPUT*[/]Enter A or B")
                     continue
 
                 self.question_number = 0
-                if player_dies == "A":
+                if self.player_dies == "A":
                     return self.question_number
-                if player_dies == "B":
+                if self.player_dies == "B":
                     self.question_number = 5
                     return self.question_number
+                
 
     def final(self):
         if self.counter == 5:
-            return finishdo()
+            
+            finishdo()
+            self.validation()
