@@ -12,13 +12,13 @@ if __name__ == "__main__":
         starwars()
         # ask for name and checks valid input
         while True:
-            name = console.input("[yellow]Hello there! what is your name?: ")
-            name = name.upper()
-            if name == "":
-                console.print(f"[red][{name}] **NO INPUT**[/] enter you name ")
+            player = console.input("[yellow]Hello there! what is your name?: ")
+            player = player.upper()
+            if player == "":
+                console.print(f"[red][{player}] **NO INPUT**[/] enter you player ")
             else:
                 break
-        print(Padding(f"Welcome {name} Are you SITH or JEDI lets find out",
+        print(Padding(f"Welcome {player} Are you SITH or JEDI lets find out",
                       (2, 40), style="bold black on green", expand=True,))
         start()
        
@@ -52,7 +52,7 @@ if __name__ == "__main__":
         if new_game == "B":
             print(
                 Padding(
-                    f"Good bye {name} May the force be with you",
+                    f"Good bye {player} May the force be with you",
                     (2,
                      50),
                     style="bold black on blue",

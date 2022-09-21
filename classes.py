@@ -219,7 +219,7 @@ class Story(Questionaire):
                     expand=True,
                     
                 ))
-            self.validation()
+            self.restart()
     def restart(self):
         
         
@@ -245,4 +245,4 @@ class Story(Questionaire):
         if self.counter == 5:
             
             finishdo()
-            self.validation()
+            self.restart()
