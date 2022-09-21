@@ -4,8 +4,8 @@ from rich.padding import Padding
 from rich import print
 from classes import Quiz, Story
 from data import question_data, quest_data
-
 console = Console()
+
 if __name__ == "__main__":
     # loops through game
     while True:
@@ -21,7 +21,7 @@ if __name__ == "__main__":
         print(Padding(f"Welcome {name} Are you SITH or JEDI lets find out",
                       (2, 40), style="bold black on green", expand=True,))
         start()
-        console.rule("")
+       
         # empty list to store questions
         question_list = []
         # grabs the question data

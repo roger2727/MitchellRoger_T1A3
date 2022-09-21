@@ -1,3 +1,4 @@
+from rich import print
 
 from rich.console import Console
 console=Console()
@@ -5,9 +6,11 @@ console=Console()
 
 
 def starwars():
-    console.rule("")
-    console.rule("")
-    console.print(r""" [yellow]                                                         __________________     ____        ___________
+      console.rule("")
+      console.rule("")
+   
+   
+      console.print(r""" [yellow]                                                         __________________     ____        ___________
                                             .       .    /                 |    /    \    .  |          \
             .              .           .        .       /    ______   _____| . /      \      |    ___    |     .     .                      .                    
                                                         \    \    |   |       /   /\   \     |   |___>   |                  .
@@ -32,12 +35,14 @@ def starwars():
    .           .           .     .           .      \            /  /   /__\   \    |         _/.   \    \          .             .    .           .            
                                                      \    /\    /  /            \   |   |\    \______>    |   .
                                                       \  /  \  /  /    ______    \  |   | \              /          .
- .     .           .           .     .             .   \/    \/  /____/      \____\ |___|  \____________/ ADVENTURE By M ROGER[/] """,style="yellow")
-    console.rule("")
-    console.rule("")
+ .     .           .           .     .             .   \/    \/  /____/      \____\ |___|  \____________/ ADVENTURE By M ROGER[/] """)
+      console.rule("")
+      console.rule("")
+   
+   
 def yoda():
     
-    console.print(r""" [green]
+   console.print(r""" [green]
                __   _______  _______   __  
               |  | |   ____||       \ |  | 
               |  | |  |__   |  .--.  ||  | 
@@ -58,9 +63,9 @@ def yoda():
                   __.l"-:_JL_;-";.__
              
 [i]“Train yourself to let go of everything you fear to lose.”
-        [/]  """, style= "green")  
+        [/]  """)  
 def vadar():
-    console.print(r"""[red]
+   console.print(r"""[red]
                    
          _______. __  .___________. __    __  
         /       ||  | |           ||  |  |  | 
@@ -85,11 +90,11 @@ def vadar():
 
 [i]"Your Destiny Lies With Me, Obi-Wan Knew This To Be True."      
 
-[/]""", style ="red")    
+[/]""")    
     
 def finishdo():
      
-  console.print(r"""[yellow]            ________   ___   ____
+ console.print(r"""[yellow]            ________   ___   ____
            / __   __| / _ \ |  _ \
      ______> \ | |   |  _  ||    /_____________________________
     / _______/ |_|   |_| |_||_|\______________________________ \
@@ -109,8 +114,8 @@ def finishdo():
                                  \_/\_/ |_| |_||_|\_\|__/)  [/] """)
 def startquest():
       
-      console.rule("")
-      console.print(r""" [yellow]                                         __   _______  _______   __                                                    
+     console.rule("")
+     console.print(r""" [yellow]                                         __   _______  _______   __                                                    
                                          |  | |   ____||       \ |  |                                                   
                                          |  | |  |__   |  .--.  ||  |                                                   
                                    .--.  |  | |   __|  |  |  |  ||  |                                                   
@@ -125,24 +130,26 @@ def startquest():
 |_______/       |__|      \______/  | _| `._____|   |__|        \_____\_____\\______/  |_______|_______/       |__|     
                                                                                                                         
                                        """)
-      console.rule("")
-      console.rule("")
+     console.rule("")
+     console.rule("")
+     
+     
       
 def start():
-      console.print(r""" 
-            
-               _--~~--_                      
- [blue]            /~/_|  |_\~\  [/]                 
-            |____________|                       
-[blue]            |[][][][][][]|:=  . [/]              
-          __| __         |__ \  ' .      [yellow]   ______      __    __   __   ________ [/]   
-     [blue]    |[/]  ||. |[blue]   ==[/]   | [blue] |[/]  \    ' .  [yellow]  /  __  \    |  |  |  | |  | |       / [/]
-     [blue]   (|[/]  ||__|   ==   | [blue] |)[/]   \      '[yellow] |  |  |  |   |  |  |  | |  | `---/  /  [/] 
-     [blue]    |[/]  |[] [] [blue] ==[/]   | [blue] |[/]      \    '[yellow] |  |  |  |   |  |  |  | |  |    /  /   [/]  
-    [blue]     |[/]  |____________|  [blue]|[/]        \   [yellow] |  `--'  '--.|  `--'  | |  |   /  /----.[/]    
- [white]        /__\            /__\          \ [yellow]  \_____\_____\\______/  |__|  /________| [/]
-  
- """) 
+     console.rule("")
+     console.print(r"""[yellow]                                   ______      __    __   __   ________                                    
+                                  /  __  \    |  |  |  | |  | |       /                                    
+                                 |  |  |  |   |  |  |  | |  | `---/  /                                     
+                                 |  |  |  |   |  |  |  | |  |    /  /                                      
+                                 |  `--'  '--.|  `--'  | |  |   /  /----.                                  
+                                  \_____\_____\\______/  |__|  /________|                                  
+                                                                                                                              
+       __   _______  _______   __       ______   .______              _______. __  .___________. __    __  
+      |  | |   ____||       \ |  |     /  __  \  |   _  \            /       ||  | |           ||  |  |  | 
+      |  | |  |__   |  .--.  ||  |    |  |  |  | |  |_)  |          |   (----`|  | `---|  |----`|  |__|  | 
+.--.  |  | |   __|  |  |  |  ||  |    |  |  |  | |      /            \   \    |  |     |  |     |   __   | 
+|  `--'  | |  |____ |  '--'  ||  |    |  `--'  | |  |\  \----.   .----)   |   |  |     |  |     |  |  |  | 
+ \______/  |_______||_______/ |__|     \______/  | _| `._____|   |_______/    |__|     |__|     |__|  |__|""") 
 
 
                                         

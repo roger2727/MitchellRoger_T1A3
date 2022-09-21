@@ -4,9 +4,8 @@ from functions import yoda, vadar, finishdo,startquest
 from rich.console import Console
 from rich import print
 from rich.padding import Padding
-
-
 console = Console()
+
 
 
 class Question:
@@ -73,7 +72,7 @@ class Questionaire:
                 f"Q:{self.question_number}/10: {current_question.text}",
                 (1, 1), style="bold on blue", expand=True,))
             user_answer=input("\n Enter A or B: ")
-            console.rule("")
+            
             user_answer = user_answer.upper()
 
             if user_answer != "A" and user_answer != "B":
@@ -82,6 +81,7 @@ class Questionaire:
                 continue
             else:
                 break
+
 
         self.check_answer(
             user_answer,
