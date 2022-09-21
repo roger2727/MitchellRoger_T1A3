@@ -101,6 +101,15 @@ link to Trello Implementation plan [_here_](https://trello.com/b/p572wN56/star-w
 
    - type in the terminal python3 main.py
 
+## Execute Program:
+
+1. Create a Virtual Environment
+   - type in the terminal python3 -m venv venv
+   - type in the terminal . venv/bin/activate
+   - Installation instructions: https://docs.python.org/3/library/venv.html
+2. In your terminal go to directory containing application
+3. To execute run.sh file by entering: `./run.sh`
+
 <br>
 <br>
 
