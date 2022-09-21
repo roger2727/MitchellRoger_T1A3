@@ -1,4 +1,4 @@
-from functions import starwars
+from functions import starwars,start
 from rich.console import Console
 from rich.padding import Padding
 from rich import print
@@ -20,6 +20,7 @@ if __name__ == "__main__":
                 break
         print(Padding(f"Welcome {name} Are you SITH or JEDI lets find out",
                       (2, 40), style="bold black on green", expand=True,))
+        start()
         console.rule("")
         # empty list to store questions
         question_list = []

@@ -1,4 +1,4 @@
-question_data = [{"question": "[white]Darth Vader tells you he's your father. What do you do?:[/]\n\n[black]A. Kill him and take his place\n\nB. Try and convince him to be a good dad and turn to the good side of the force\n",
+question_data = [{"question": "[white]Darth Vader tells you he's your father. What do you do?:[/]\n\n[black]A. Kill him and take his place\n\nB. Try and convince him to be a good dad and turn to the good side of the force",
                   "correct_answer": "B",
                   "incorrect_answers": ""},
                  {"question": "[white]You find out a co-worker is gossiping about you, how do you handle it?:[/]\n\n[black]A. Introduce them to a left hook\n\nB. Ignore it\n",

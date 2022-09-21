@@ -1,4 +1,5 @@
 
+from os import name
 from functions import yoda, vadar, finishdo,startquest
 from rich.console import Console
 from rich import print
@@ -68,9 +69,10 @@ class Questionaire:
 
         while True:
            
-            user_answer = console.input(Padding(
-                f"Q:{self.question_number}/10: {current_question.text}\nEnter A or B:",
-                (2, 2), style="bold on blue", expand=True,))
+            console.print(Padding(
+                f"Q:{self.question_number}/10: {current_question.text}",
+                (1, 1), style="bold on blue", expand=True,))
+            user_answer=input("\n Enter A or B: ")
             console.rule("")
             user_answer = user_answer.upper()
 
