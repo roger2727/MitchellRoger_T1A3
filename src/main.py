@@ -2,8 +2,8 @@ from functions import starwars,start
 from rich.console import Console
 from rich.padding import Padding
 from rich import print
-from classes import Quiz, Story
-from data import question_data, quest_data
+from classes import Darth, Quiz, Story
+from data import question_data, quest_data,darth_data
 console = Console()
 
 if __name__ == "__main__":
@@ -33,9 +33,10 @@ if __name__ == "__main__":
         # empty list to store questions
         quest_question_list = []
         # grabs the quest data
-        quest = Story(quest_data)
-        # calls the functions
-        quest.run()
+    
+        darth_list =[]
+  
+        
         
         # check to play agin,check valid input
         while True:

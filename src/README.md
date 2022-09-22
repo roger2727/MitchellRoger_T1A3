@@ -18,48 +18,50 @@ link to video presentation [_here_](hkg).
 
 ## **General Information**
 
-this terminal app is a star wars adventure game with a quiz to determain if you are a jedi or sith and a choose your own adventure story.
-<br>
+This python terminal app is a star wars adventure game with a quiz to determine if you are a Jedi or Sith and choose your own adventure story.
+
 <br>
 
 ## **Styling Convention**
 
 The PEP8 style guidelines were implemented to develop this Python application.
 
-Example of some of the guidlines (PEP 8 – Style Guide for Python Code | peps.python.org 2022)
+Example of some of the guidelines (PEP 8 – Style Guide for Python Code | peps.python.org 2022)
 
-<br>
-
-- Use 4 spaces per indentation level.
+- Use four spaces per indentation level.
 - Limit all lines to a maximum of 79 characters.
 - Surround top-level function and class definitions with two blank lines.
-- Imports should usually be on separate lines
-
-<br>
-<br>
+- Imports should usually be on separate lines.
+  <br>
+  <br>
 
 ## **Game Features**
 
 <br>
 <br>
 
-### **Feature 1: The quiz works out if you are a sith or jedi from the answers you give**
+## **Feature 1: The quiz works out if you are a sith or Jedi from the answers you give**
 
-The quiz uses a counter to count how many correct questions the user gets, then i used an if statment to check if the user guesses correct more than half of the questions. If so It will print out that you are a Jedi and display ascci art.
+- The quiz uses a counter to count how many correct questions the user gets. Then I used an if statement to check if the user guessed correct more than half of the questions. If so, It will print out that you are a Jedi and display ASCII art.
+  <br>
+  <br>
+
+## **Feature 2: different story quests**
+
+- Depending on what your result is after completing the quiz, you will be directed to the corresponding story quest.
 
 <br>
 <br>
 
-### **Feature 2: choose your path in a starwars story quest**
+## **Feature 3: choose your path in a StarWars story quest**
 
-The story quest will ask you to choose a path a or b than uses an if statement to check that the user's answer matches the correct answer. If correct, the next quest is printed out. If incorect, it will print you are incorect, and it will ask you if you want to play again. If you say yes, the question count is reset, and you start the quest again
+- The story quest will ask you to choose a path a or b that uses an if statement to check that the user's answer matches the correct answer. If correct, the next quest is printed out. If incorrect, it will print you are incorrect and ask you if you want to play again. If you say yes, the question count is reset, and you start the quest again
+  <br>
+  <br>
 
-<br>
-<br>
+## **Feature 4: Restart options**
 
-### **Feature 3: Restart options**
-
-The game has a restart feature at the end of both the quiz and quests, so the player does not have to go through the whole game to do the quiz again, and vice versa for the story quest. I accomplished this by using the input and putting it in an if statement to catch what the user picks
+- The game has a restart feature at the end of both the quiz and quests, so the player does not have to go through the whole game to do the quiz again, and vice versa for the story quest. I accomplished this by using the input and putting it in an if statement to catch what the user picks.
 
 <br>
 <br>
@@ -77,37 +79,37 @@ link to Trello Implementation plan [_here_](https://trello.com/b/p572wN56/star-w
 
 1. Install Python3
 
-   - check if Python3 is installed, type in the terminal python3 --version' into terminal
+   - check if Python3 is installed, type in the terminal `python3 --version`' into the terminal
 
    - Installation instructions: https://realpython.com/installing-python/
 
 2. Create a Virtual Environment
 
-   - type in the terminal python3 -m venv venv
-   - type in the terminal . venv/bin/activate
+   - type in the terminal `python3 -m venv venv`
+   - type in the terminal `. venv/bin/activate`
    - Installation instructions: https://docs.python.org/3/library/venv.html
 
-3. Install pip (To check if pip is installed, type 'pip --version' into terminal
+3. Install pip (To check if pip is installed, type `pip --version` into the terminal
 
-   - if pip not intalled type python -m ensurepip --upgrade
+   - if pip is not installed type `python3 -m ensurepip --upgrade`
    - Installation instructions: https://pip.pypa.io/en/stable/installation/
 
-4. Install rich module pakage
+4. Install the rich module package
 
-   - type python -m pip install rich into the terminal
+   - type `python3 -m pip install` rich into the terminal
    - Installation instructions: https://pypi.org/project/rich/
 
-5. run app
+5. run the app
 
-   - type in the terminal python3 main.py
+   - type in the terminal `python3 main.py`
 
-## Execute Program:
+## Execute Program
 
 1. Create a Virtual Environment
-   - type in the terminal python3 -m venv venv
-   - type in the terminal . venv/bin/activate
+   - type in the terminal `python3 -m venv venv`
+   - type in the terminal `. venv/bin/activate`
    - Installation instructions: https://docs.python.org/3/library/venv.html
-2. In your terminal go to directory containing application
+2. In your terminal, go to the directory containing the application
 3. To execute run.sh file by entering: `./run.sh`
 
 <br>

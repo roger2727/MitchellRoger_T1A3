@@ -1,6 +1,7 @@
 
 from os import name
-from functions import yoda, vadar, finishdo,startquest
+from data import quest_data,darth_data
+from functions import yoda, vadar, finishdo,startquest,skull,sith,sithfinish
 from rich.console import Console
 from rich import print
 from rich.padding import Padding
@@ -139,6 +140,7 @@ class Quiz(Questionaire):
                         expand=True,
                     ))
                 yoda()
+                
 
                 while True:
 
@@ -156,7 +158,11 @@ class Quiz(Questionaire):
                     self.question_number = 0
                     return self.question_number
                 else:
+                    
                     startquest()
+                quest = Story(quest_data)
+        # calls the functions
+                quest.run()    
 
             else:
                 print(
@@ -168,6 +174,8 @@ class Quiz(Questionaire):
                         expand=True,
                     ))
                 vadar()
+                
+              
                 while True:
 
                     start_again = console.input(
@@ -184,8 +192,9 @@ class Quiz(Questionaire):
                     self.question_number = 0
                     return self.question_number
                 else:
-                    startquest()
-
+                    sith()
+                darth =Sith(darth_data)
+                darth.run()
 
 class Story(Questionaire):
     """Constructs all the necessary attributes for story
@@ -209,7 +218,7 @@ class Story(Questionaire):
             
         else:
             self.counter =0
-            
+            skull()
             print(
                 Padding(
                     f"[black] ☠︎ ☠︎ ☠︎[/]{wrong_answers}[black]☠︎ ☠︎ ☠︎[/]",
@@ -246,3 +255,11 @@ class Story(Questionaire):
             
             finishdo()
             self.restart()
+            
+class Sith(Story):
+    def final(self):
+        if self.counter == 5:
+            
+            sithfinish()
+            self.restart()
+    
