@@ -2,7 +2,7 @@ from functions import starwars,start
 from rich.console import Console
 from rich.padding import Padding
 from rich import print
-from classes import Darth, Quiz, Story
+from classes import  Quiz
 from data import question_data, quest_data,darth_data
 console = Console()
 
