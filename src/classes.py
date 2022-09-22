@@ -129,7 +129,7 @@ class Quiz(Questionaire):
         """
 
         if self.question_number == 10:
-            if self.counter > 6:
+            if self.counter >= 6:
 
                 print(
                     Padding(
