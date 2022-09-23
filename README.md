@@ -11,6 +11,7 @@ link to video presentation [_here_](https://vimeo.com/752816080).
 - [Implementation Plan](#implementation-plan)
 - [How To Install And Run](#how-to-install-and-run)
 - [Screenshots](#screenshots)
+- [Tests](#tests)
 - [Reference](#reference)
 
 <br>
@@ -121,6 +122,10 @@ link to Trello Implementation plan [_here_](https://trello.com/b/p572wN56/star-w
 
 <br>
 <br>
+
+## **Tests**
+
+![Example screenshot](/docs/test.png)
 
 ## **Reference**
 
