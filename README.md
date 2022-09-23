@@ -32,7 +32,7 @@ Example of some of the guidelines (PEP 8 – Style Guide for Python Code | peps.
 - Use four spaces per indentation level.
 - Limit all lines to a maximum of 79 characters.
 - Surround top-level function and class definitions with two blank lines.
-- Imports should usually be on separate lines.
+
   <br>
   <br>
 
