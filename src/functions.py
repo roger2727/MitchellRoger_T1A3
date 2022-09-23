@@ -1,16 +1,17 @@
+from unicodedata import name
 from rich import print
 
 from rich.console import Console
-console=Console()
 
+console = Console()
 
 
 def starwars():
-      console.rule("")
-      console.rule("")
-   
-   
-      console.print(r""" [yellow]                                                         __________________     ____        ___________
+    console.rule("")
+    console.rule("")
+
+    console.print(
+        r""" [yellow]                                                         __________________     ____        ___________
                                             .       .    /                 |    /    \    .  |          \
             .              .           .        .       /    ______   _____| . /      \      |    ___    |     .     .                      .                    
                                                         \    \    |   |       /   /\   \     |   |___>   |                  .
@@ -35,14 +36,16 @@ def starwars():
    .           .           .     .           .      \            /  /   /__\   \    |         _/.   \    \          .             .    .           .            
                                                      \    /\    /  /            \   |   |\    \______>    |   .
                                                       \  /  \  /  /    ______    \  |   | \              /          .
- .     .           .           .     .             .   \/    \/  /____/      \____\ |___|  \____________/ ADVENTURE By M ROGER[/] """)
-      console.rule("")
-      console.rule("")
-   
-   
+ .     .           .           .     .             .   \/    \/  /____/      \____\ |___|  \____________/ ADVENTURE By M ROGER[/] """
+    )
+    console.rule("")
+    console.rule("")
+
+
 def yoda():
-    
-   console.print(r""" [green]
+
+    console.print(
+        r""" [green]
                __   _______  _______   __  
               |  | |   ____||       \ |  | 
               |  | |  |__   |  .--.  ||  | 
@@ -63,9 +66,13 @@ def yoda():
                   __.l"-:_JL_;-";.__
              
 [i]“Train yourself to let go of everything you fear to lose.”
-        [/]  """)  
+        [/]  """
+    )
+
+
 def vadar():
-   console.print(r"""[red]
+    console.print(
+        r"""[red]
                    
          _______. __  .___________. __    __  
         /       ||  | |           ||  |  |  | 
@@ -90,11 +97,14 @@ def vadar():
 
 [i]"Your Destiny Lies With Me, Obi-Wan Knew This To Be True."      
 
-[/]""")    
-    
-def finishdo():
-     
- console.print(r"""[yellow]            ________   ___   ____
+[/]"""
+    )
+
+
+def jedi_end():
+
+    console.print(
+        r"""[yellow]            ________   ___   ____
            / __   __| / _ \ |  _ \
      ______> \ | |   |  _  ||    /_____________________________
     / _______/ |_|   |_| |_||_|\______________________________ \
@@ -111,11 +121,15 @@ def finishdo():
    \ \____________________________    _   ___   ____   _______/ /
     \___________________________  |  | | / _ \ |  _ \ / _______/
                                 | |/\| ||  _  ||    / > \        LS
-                                 \_/\_/ |_| |_||_|\_\|__/)  [/] """)
-def startquest():
-      
-     console.rule("")
-     console.print(r""" [green]                                         __   _______  _______   __                                                    
+                                 \_/\_/ |_| |_||_|\_\|__/)  [/] """
+    )
+
+
+def jedi_quest():
+
+    console.rule("")
+    console.print(
+        r""" [green]                                         __   _______  _______   __                                                    
                                          |  | |   ____||       \ |  |                                                   
                                          |  | |  |__   |  .--.  ||  |                                                   
                                    .--.  |  | |   __|  |  |  |  ||  |                                                   
@@ -129,16 +143,17 @@ def startquest():
 .----)   |      |  |     |  `--'  | |  |\  \----.   |  |       |  `--'  '--.|  `--'  | |  |____.----)   |      |  |     
 |_______/       |__|      \______/  | _| `._____|   |__|        \_____\_____\\______/  |_______|_______/       |__| 
                                                                                                                      
-                                       """)
-     console.rule("")
-     console.rule("")
-     
-     
-      
+                                       """
+    )
+    console.rule("")
+    console.rule("")
+
+
 def start():
-     console.rule("")
-     console.rule("")
-     console.print(r"""[yellow]                                   ______      __    __   __   ________                                    
+    console.rule("")
+    console.rule("")
+    console.print(
+        r"""[yellow]                                   ______      __    __   __   ________                                    
                                   /  __  \    |  |  |  | |  | |       /                                    
                                  |  |  |  |   |  |  |  | |  | `---/  /                                     
                                  |  |  |  |   |  |  |  | |  |    /  /                                      
@@ -152,11 +167,13 @@ def start():
 |  `--'  | |  |____ |  '--'  ||  |    |  `--'  | |  |\  \----.   .----)   |   |  |     |  |     |  |  |  | 
  \______/  |_______||_______/ |__|     \______/  | _| `._____|   |_______/    |__|     |__|     |__|  |__|
  
- """) 
+ """
+    )
 
 
-def skull():
-      print(r"""
+def die():
+    print(
+        r"""
             
 [red]██████   █████  ███    ███ ███████      ██████  ██    ██ ███████ ██████  
 ██       ██   ██ ████  ████ ██          ██    ██ ██    ██ ██      ██   ██ 
@@ -164,13 +181,15 @@ def skull():
 ██    ██ ██   ██ ██  ██  ██ ██          ██    ██  ██  ██  ██      ██   ██ 
  ██████  ██   ██ ██      ██ ███████      ██████    ████   ███████ ██   ██ 
                                                                           
-                                                                          """)                                        
+                                                                          """
+    )
 
 
-def sith():
-      console.rule("",style="red")
-      console.rule("",style="red")
-      console.print(r"""[red]                                         _______. __  .___________. __    __                                             
+def sith_quest():
+    console.rule("", style="red")
+    console.rule("", style="red")
+    console.print(
+        r"""[red]                                         _______. __  .___________. __    __                                             
                                         /       ||  | |           ||  |  |  |                                            
                                        |   (----`|  | `---|  |----`|  |__|  |                                            
                                         \   \    |  |     |  |     |   __   |                                            
@@ -184,14 +203,16 @@ def sith():
 .----)   |      |  |     |  `--'  | |  |\  \----.   |  |        |  `--'  '--.|  `--'  | |  |____.----)   |      |  |     
 |_______/       |__|      \______/  | _| `._____|   |__|         \_____\_____\\______/  |_______|_______/       |__|   
 
-""") 
-      console.rule("",style="red")
-      console.rule("",style="red")
+"""
+    )
+    console.rule("", style="red")
+    console.rule("", style="red")
 
 
-def sithfinish():
-     
- console.print(r"""[yellow]            ________   ___   ____
+def sith_end():
+
+    console.print(
+        r"""[yellow]            ________   ___   ____
            / __   __| / _ \ |  _ \
      ______> \ | |   |  _  ||    /_____________________________
     / _______/ |_|   |_| |_||_|\______________________________ \
@@ -208,4 +229,5 @@ def sithfinish():
    \ \____________________________    _   ___   ____   _______/ /
     \___________________________  |  | | / _ \ |  _ \ / _______/
                                 | |/\| ||  _  ||    / > \        LS
-                                 \_/\_/ |_| |_||_|\_\|__/)  [/] """)          
+                                 \_/\_/ |_| |_||_|\_\|__/)  [/] """
+    )
