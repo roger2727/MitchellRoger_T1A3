@@ -1,7 +1,7 @@
 # T1A3 Star Wars terminal app
 
 Github repo [_here_](https://github.com/roger2727/MitchellRoger_T1A3). \
-link to video presentation [_here_](hkg).
+link to video presentation [_here_](https://vimeo.com/752816080).
 
 ## Table of Contents
 

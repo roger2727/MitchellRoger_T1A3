@@ -11,11 +11,11 @@ if __name__ == "__main__":
     # loops through game
     while True:
         starwars()
-        stu1 = Player()
-        stu1.askName()
+        player = Player()
+        player.askName()
 
         start()
-        stu1.displayName()
+        player.displayName()
         quiz = Quiz(question_data)
         quiz.run()
 
