@@ -111,3 +111,6 @@ darth_data = [
         "incorrect_answers": "[black bold] The shields on the battle droids a too strong you and your master are killed. ",
     },
 ]
+def test_keys():
+    print("question"in question_data[1] )
+test_keys()   
