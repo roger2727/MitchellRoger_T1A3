@@ -9,20 +9,20 @@ console = Console()
 
 
 class Player:
-
-    # initialization or constructor method of
     def __init__(self):
         pass
 
     def askName(self):
-
         while True:
-            self.name = console.input("Hello there! what is your name? ")
-            if self.name == "":
-                console.print("[red]**NO INPUT**[/] enter your name ")
-                return Player.askName(self)
-            else:
-                break
+            try:
+                self.name = input("Hello there! what is your name? ")
+                if not self.name:
+                    raise ValueError(print("[red]**NO INPUT**[/]"))
+                else:
+                    break
+
+            except ValueError:
+                print("Try again")
 
     def displayName(self):
         print(f"Welcome [yellow]{self.name}[/]\n")
