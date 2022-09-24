@@ -13,6 +13,12 @@ class Player:
         pass
 
     def askName(self):
+        """ask for player name and print out
+        welcome
+
+        Raises:
+            ValueError: if no input rety input
+        """
         while True:
             try:
                 self.name = input("Hello there! what is your name? ")
