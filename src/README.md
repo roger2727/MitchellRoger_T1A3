@@ -11,6 +11,7 @@ link to video presentation [_here_](https://vimeo.com/752816080).
 - [Implementation Plan](#implementation-plan)
 - [How To Install And Run](#how-to-install-and-run)
 - [Screenshots](#screenshots)
+- [Flow Chart](#flow-chart)
 - [Tests](#tests)
 - [Reference](#reference)
 
@@ -119,6 +120,13 @@ link to Trello Implementation plan [_here_](https://trello.com/b/p572wN56/star-w
 ## **Screenshots**
 
 ![Example screenshot](/docs/Screen%20Shots.png)
+
+<br>
+<br>
+
+## **Flow Chart**
+
+![Example screenshot](/docs/flow_chart.png)
 
 <br>
 <br>
