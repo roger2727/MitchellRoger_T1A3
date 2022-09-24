@@ -1,7 +1,8 @@
 # T1A3 Star Wars terminal app
 
 Github repo [_here_](https://github.com/roger2727/MitchellRoger_T1A3). \
-link to video presentation [_here_](https://vimeo.com/752816080).
+link to video presentation [_here_](https://vimeo.com/752816080).\
+link to Trello Implementation plan [_here_](https://trello.com/b/p572wN56/star-wars-terminal-app).
 
 ## Table of Contents
 
@@ -140,3 +141,15 @@ link to Trello Implementation plan [_here_](https://trello.com/b/p572wN56/star-w
 Refrence for PEP8 style guidelines
 
 PEP 8 – Style Guide for Python Code | peps.python.org 2022. viewed 21 September 2022, [_https://peps.python.org/pep-0008/_].
+
+Reference for assci art
+
+Star Wars - science fantasy - science fiction 2022. viewed 24 September 2022, https://asciiart.website/index.php?art=movies/star%20wars.
+
+Reference for Star Wars lore
+
+Star Wars 2022. viewed 24 September 2022, https://starwars.fandom.com/wiki/Star_Wars.
+
+Reference for choose your own adveture
+
+Choose Your Own Adventure - Wikipedia 2022. viewed 24 September 2022, https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure.
