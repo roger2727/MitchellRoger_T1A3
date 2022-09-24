@@ -17,6 +17,8 @@ if [[ "$package" != "" ]]; then
      pip install "${package[@]}";
      else
      echo "you need rich package to play"
+
+     exit 1
 fi     
 
 # runs file

@@ -1,5 +1,3 @@
-from os import name
-from typing import final
 from data import quest_data, darth_data
 from functions import yoda, vadar, jedi_end, jedi_quest
 from functions import die, sith_quest, sith_end
@@ -14,7 +12,7 @@ class Player:
 
     # initialization or constructor method of
     def __init__(self):
-        self.name = name
+        pass
 
     def askName(self):
 
@@ -68,15 +66,19 @@ class Questionaire:
             new_question = Question(question_text, question_answer, wrong_path)
 
             self.question_list.append(new_question)
+
             # empty list to store questions
 
     def check_questions(self):
+
         """checks question in range
 
         Returns:
             str: returns if question number is less then the list of questions
         """
+
         self.new = len(self.question_list)
+
         return self.question_num < len(self.question_list)
 
     def next_question(self):
@@ -97,6 +99,7 @@ class Questionaire:
                     expand=True,
                 )
             )
+
             user_answer = input("\n Enter A or B: ")
 
             user_answer = user_answer.upper()
@@ -122,7 +125,7 @@ class Questionaire:
             self.counter += 1
 
     def final(self):
-        pass
+        print("somthing")
 
     def run(self):
         """calls the functions"""
@@ -204,6 +207,7 @@ class Quiz(Questionaire):
                 if start_again == "B":
                     self.counter = 0
                     self.question_num = 0
+
                     return self.question_num
                 else:
                     sith_quest()
@@ -212,6 +216,7 @@ class Quiz(Questionaire):
 
 
 class Story(Questionaire):
+
     """Constructs all the necessary attributes for story
 
     Args:
@@ -221,6 +226,7 @@ class Story(Questionaire):
     def check_answer(self, user_answer, correct_answer, wrong_path):
 
         if user_answer == correct_answer:
+
             self.counter += 1
 
             print(Padding("correct", (1, 1), style="on green", expand=False))
@@ -254,7 +260,7 @@ class Story(Questionaire):
 
             self.question_num = 0
             if self.player_dies == "A":
-                return final(self)
+                return self.final
             if self.player_dies == "B":
                 self.question_num = 5
                 return self.question_num

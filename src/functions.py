@@ -1,5 +1,5 @@
-from unicodedata import name
 from rich import print
+
 
 from rich.console import Console
 
@@ -231,3 +231,6 @@ def sith_end():
                                 | |/\| ||  _  ||    / > \        LS
                                  \_/\_/ |_| |_||_|\_\|__/)  [/] """
     )
+
+
+# define the countdown func.

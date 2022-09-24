@@ -5,6 +5,7 @@ from rich import print
 from classes import Player, Quiz, Player
 from data import question_data
 
+
 console = Console()
 
 if __name__ == "__main__":
@@ -25,7 +26,7 @@ if __name__ == "__main__":
             )
             new_game = new_game.upper()
             if new_game != "A" and new_game != "B":
-                console.print(f"[red][{new_game}] *INVALID INPUT*[/] Enter A or B ")
+                console.print(f"[red]*INVALID INPUT*[/] Enter A or B ")
 
             else:
                 break
