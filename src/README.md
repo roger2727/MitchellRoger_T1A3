@@ -43,9 +43,10 @@ Example of some of the guidelines (PEP 8 – Style Guide for Python Code | peps.
 <br>
 <br>
 
-## **Feature 1: The quiz works out if you are a sith or Jedi from the answers you give**
+## **Feature 1: The quiz**
 
-- The quiz uses a counter to count how many correct questions the user gets. Then I used an if statement to check if the user guessed correct more than half of the questions. If so, It will print out that you are a Jedi and display ASCII art.
+- The quiz uses a counter to count how many correct answers you give and It will print out the final result with assci art
+
   <br>
   <br>
 
@@ -58,13 +59,14 @@ Example of some of the guidelines (PEP 8 – Style Guide for Python Code | peps.
 
 ## **Feature 3: choose your path in a StarWars story quest**
 
-- The story quest will ask you to choose a path a or b that uses an if statement to check that the user's answer matches the correct answer. If correct, the next quest is printed out. If incorrect, it will print you are incorrect and ask you if you want to play again. If you say yes, the question count is reset, and you start the quest again
+- The story quest will ask you to choose a path a or b and it wil check that the user's answer matches the correct answer. If correct, the next quest is printed out. If incorrect, it will print you are incorrect and ask you if you want to play again. If you say yes, the question count is reset, and you start the quest again
+
   <br>
   <br>
 
 ## **Feature 4: Restart options**
 
-- The game has a restart feature at the end of both the quiz and quests, so the player does not have to go through the whole game to do the quiz again, and vice versa for the story quest. I accomplished this by using the input and putting it in an if statement to catch what the user picks.
+- The game has a restart feature at the end of both the quiz and quests, so the player does not have to go through the entire game,
 
 <br>
 <br>
